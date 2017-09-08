@@ -17,5 +17,5 @@ setConvertableCurrenciesAndRates
 			rate = '",error: ' ifTrue:[] ifFalse:[rate:=rate copy asNumber.
 		
 			each conversionRateToUSD: rate ]].
-	Currency convertableCurrencies: (currencies select:[:each | each isConvertable]).
-	Currency currenciesUpdated: DateAndTime now.
+	self convertableCurrencies: (currencies select:[:each | each isConvertable]).
+	self currenciesUpdated: DateAndTime now.

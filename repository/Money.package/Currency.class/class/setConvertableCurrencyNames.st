@@ -1,6 +1,6 @@
 accessing
 setConvertableCurrencyNames
-	Currency
+	self
 		convertableCurrencyNames:
-			(Currency convertableCurrencies
+			(self convertableCurrencies
 				collect: [ :each | each currencyName ]) asSet asSortedCollection
