@@ -2,7 +2,7 @@ reading
 readFrom: aStream
 	| number thousands curr currencies |
 	currencies := Locale knownLocales values collect: [ :loc | loc primCurrencySymbol ].
-	curr := WriteStream on: String new.
+	curr := WriteStream on: String new..
 	number := 0.
 
 	['-+0123456789. ' includes: aStream peek] whileFalse: [ curr nextPut: aStream next ].

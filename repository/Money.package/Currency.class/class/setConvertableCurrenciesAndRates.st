@@ -1,21 +1,11 @@
 accessing
 setConvertableCurrenciesAndRates
-	| response first second tmp tmp1 rate arg |
+	| rates first second tmp tmp1rates  rate arg argDict|
+
 	convertableCurrencies := Dictionary new.
-	currencies 
-		do:
-			[ :each | 
-			arg := Array with: '1USD=?' , each currency.
-			response := HTTPSocket
-				httpGetDocument: 'http://www.google.com/ig/calculator'
-				args:
-					{'hl' -> #('en').
-					'q' -> arg}.
-			first := response contents findString: ',rhs' startingAt: 0.
-			second := response contents findString: ' ' startingAt: first + 7.
-			rate := (response contents copyFrom: first + 7 to: second).
-			rate = '",error: ' ifTrue:[] ifFalse:[rate:=rate copy asNumber.
-		
-			each conversionRateToUSD: rate ]].
-	self convertableCurrencies: (currencies select:[:each | each isConvertable]).
-	self currenciesUpdated: DateAndTime now.
+	rates:=(JSJsonParser parse: (HTTPSocket httpGetDocument: 'https://raw.github.com/currencybot/open-exchange-rates/master/latest.json' ) contents) at: 'rates'.
+	
+		currencies 	do:
+			[ :each | each conversionRateToUSD: (rates at: each currency ifAbsentPut:[0]) ].
+	Currency convertableCurrencies: (currencies select:[:each | each isConvertable]).
+	Currency currenciesUpdated: DateAndTime now.

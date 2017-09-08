@@ -1,6 +1,6 @@
 {
 	"class" : {
-		"amount:currency:" : "PaulDeBruicker 7/19/2010 17:37",
+		"amount:currency:" : "PaulDeBruicker 5/3/2010 15:52",
 		"amount:currencyCode:" : "PaulDeBruicker 5/3/2010 16:09",
 		"amount:currencyName:" : "PaulDeBruicker 5/3/2010 16:09",
 		"readFrom:" : "PaulDeBruicker 5/3/2010 15:51",
@@ -33,7 +33,7 @@
 		"normalizeAmount:" : "PaulDeBruicker 5/3/2010 15:51",
 		"printOn:" : "PaulDeBruicker 5/3/2010 15:59",
 		"printSeparated:on:" : "PaulDeBruicker 5/3/2010 15:51",
-		"readFrom:" : "PaulDeBruicker 12/1/2010 18:02",
+		"readFrom:" : "PaulDeBruicker 5/3/2010 15:51",
 		"separator" : "PaulDeBruicker 5/3/2010 15:51",
 		"setAmount:currency:" : "PaulDeBruicker 5/3/2010 16:00",
 		"useSymbol" : "PaulDeBruicker 5/3/2010 15:59" } }

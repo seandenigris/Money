@@ -1,3 +1,3 @@
 as yet unclassified
 initialize
-	byCurrency _ Dictionary new
+	byCurrency := Dictionary new
