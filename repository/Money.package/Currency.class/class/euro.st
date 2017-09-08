@@ -1,3 +1,3 @@
 currencies
 euro
-	^ self currencies detect: [ :each | each numericCode = 978 ]
+	^ self currencies detect: [ :each | each country = 'EUROPEAN UNION' and: [ each currencyCode = 'EUR' ] ]
