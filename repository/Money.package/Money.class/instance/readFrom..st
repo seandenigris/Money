@@ -9,7 +9,7 @@ readFrom: aStream
 	
 	curr contents = '' 
 		ifTrue: [ currency := Locale current primCurrencySymbol ]
-		ifFalse: [ (currencies anySatisfy: [ :each | curr contents matches: each])
+		ifFalse: [ (currencies anySatisfy: [ :each | curr contents match: each])
 			ifFalse: [ Error signal: 'Invalid Money argument']
 			ifTrue: [ currency := curr contents ] ].
 	

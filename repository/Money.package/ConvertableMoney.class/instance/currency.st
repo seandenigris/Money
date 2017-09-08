@@ -1,3 +1,3 @@
 accessing
 currency
-	^ currency ifNil: [ currency := Locale current primCurrencySymbol ]
+	^ currency ifNil: [ currency := Currency localCurrency ]

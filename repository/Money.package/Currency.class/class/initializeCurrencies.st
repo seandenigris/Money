@@ -1,9 +1,8 @@
-as yet unclassified
+class initialization
 initializeCurrencies
-	|tmp|
-	tmp := OrderedCollection  new.
-	tmp addAll: self CurrenciesAtoF.
-	tmp addAll: self CurrenciesGtoM.
-	tmp addAll: self CurrenciesNtoS.
-	tmp addAll: self CurrenciesTtoZ.
-	currencies:=tmp.
+	currencies := OrderedCollection new.
+	currencies addAll: self widelyUsedCurrencies.
+	currencies addAll: self currenciesAtoF.
+	currencies addAll: self currenciesGtoM.
+	currencies addAll: self currenciesNtoS.
+	currencies addAll: self currenciesTtoZ

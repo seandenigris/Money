@@ -1,5 +1,5 @@
-accessing
+updating
 updateCurrencies
-self initializeCurrencies;
-	setConvertableCurrenciesAndRates;
-	setConvertableCurrencyNames.
+	self
+		initializeCurrencies;
+		setConvertableCurrenciesAndRates

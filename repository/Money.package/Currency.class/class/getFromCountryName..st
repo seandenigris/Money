@@ -1,3 +1,3 @@
 accessing
 getFromCountryName: aString
-	^(convertableCurrencies select:[:each | each country = aString]) first.
+	^ self convertableCurrencies detect: [ :each | each country = aString ]

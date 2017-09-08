@@ -1,3 +1,3 @@
 accessing
 isConvertable
-	^ conversionRateToUSD ~=0.
+	^ self conversionRateToUSD ~= 0

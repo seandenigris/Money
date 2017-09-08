@@ -1,3 +1,3 @@
 accessing
 getFromName: aString
-	^(convertableCurrencies select:[:each | each currencyName = aString]) first.
+	^ self convertableCurrencies detect: [ :each | each currencyName = aString ]

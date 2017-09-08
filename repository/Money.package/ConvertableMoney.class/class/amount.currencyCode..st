@@ -1,3 +1,3 @@
 as yet unclassified
 amount: aNumber currencyCode: aString
-	^ self basicNew setAmount: aNumber currency: (Currency convertableCurrencies select:[:each | each currency = aString] )first
+	^ self basicNew setAmount: aNumber currency: (Currency getFromCurrencyCode: aString)
