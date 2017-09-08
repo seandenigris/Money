@@ -1,7 +1,6 @@
 accessing
 populateCurrencyList
 	| currencyXml |
-	self halt.
 	currencyXml := XMLDOMParser parse: (self httpClient get: self currencyListXmlUrl) contents.
 	currencies := OrderedCollection new.
 	currencyXml firstNode nodes first nodes
