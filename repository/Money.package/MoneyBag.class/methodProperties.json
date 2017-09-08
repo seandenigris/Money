@@ -1,0 +1,17 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"*" : "avi 7/14/2005 12:43",
+		"+" : "avi 6/24/2005 02:18",
+		"-" : "avi 6/24/2005 02:23",
+		"/" : "avi 7/14/2005 12:44",
+		"=" : "avi 6/24/2005 02:16",
+		"add:" : "avi 6/24/2005 02:18",
+		"asSingleCurrencyValues" : "avi 6/24/2005 02:23",
+		"hash" : "avi 6/24/2005 02:16",
+		"initialize" : "avi 6/24/2005 02:21",
+		"isMoney" : "avi 6/24/2005 02:09",
+		"isSingleCurrency" : "avi 6/24/2005 02:10",
+		"moneyForCurrency:" : "avi 6/24/2005 02:17",
+		"printOn:" : "avi 6/24/2005 15:11" } }

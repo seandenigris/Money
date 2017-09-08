@@ -1,0 +1,15 @@
+{
+	"category" : "Money",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"amount",
+		"currency" ],
+	"name" : "Money",
+	"pools" : [
+		 ],
+	"super" : "Magnitude",
+	"type" : "normal" }

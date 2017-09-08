@@ -1,0 +1,14 @@
+{
+	"category" : "Money",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "MoneyTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

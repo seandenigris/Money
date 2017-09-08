@@ -1,0 +1,25 @@
+{
+	"class" : {
+		"amount:currency:" : "avi 6/24/2005 15:05" },
+	"instance" : {
+		"*" : "avi 6/24/2005 01:56",
+		"+" : "avi 7/6/2005 17:02",
+		"-" : "avi 7/6/2005 17:02",
+		"/" : "avi 7/14/2005 12:40",
+		"<" : "avi 6/24/2005 16:26",
+		"=" : "avi 7/14/2005 12:29",
+		"\\" : "ac 9/8/2005 16:09",
+		"adaptToNumber:andSend:" : "avi 7/14/2005 12:45",
+		"amount" : "avi 6/24/2005 01:00",
+		"amountString" : "avi 9/4/2005 15:20",
+		"asSingleCurrencyValues" : "avi 6/24/2005 02:16",
+		"currency" : "avi 6/24/2005 01:00",
+		"errorNotMoney" : "avi 6/24/2005 01:55",
+		"hash" : "avi 6/24/2005 02:04",
+		"isMoney" : "avi 6/24/2005 01:00",
+		"isNumber" : "avi 1/2/2006 15:52",
+		"isSingleCurrency" : "avi 6/24/2005 02:08",
+		"nearestCent" : "avi 9/4/2005 15:13",
+		"normalizeAmount:" : "ac 10/30/2005 20:10",
+		"printOn:" : "avi 9/4/2005 15:20",
+		"setAmount:currency:" : "avi 6/24/2005 15:06" } }

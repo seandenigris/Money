@@ -1,0 +1,13 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"testCentArithmetic" : "avi 6/24/2005 15:14",
+		"testDivision" : "avi 7/14/2005 12:44",
+		"testEquality" : "avi 6/24/2005 01:10",
+		"testMultiCurrencyArithmetic" : "avi 6/24/2005 02:22",
+		"testMultiCurrencyPrinting" : "avi 7/14/2005 12:23",
+		"testNonMoneyArithmetic" : "avi 6/24/2005 01:11",
+		"testRounding" : "avi 7/14/2005 12:37",
+		"testSameCurrencyArithmetic" : "avi 7/14/2005 12:17",
+		"testSingleCurrencyPrinting" : "avi 7/14/2005 12:23" } }
