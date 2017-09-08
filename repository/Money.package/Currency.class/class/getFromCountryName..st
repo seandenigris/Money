@@ -1,3 +1,3 @@
 accessing
 getFromCountryName: aString
-	^ self currencies detect: [ :each | each country = aString ] ifNone:[nil]
+	^ self currencies detect: [ :each | each country asLowercase = aString asLowercase ] ifNone: [ Currency usDollar ]
