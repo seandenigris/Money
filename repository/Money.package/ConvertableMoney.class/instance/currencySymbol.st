@@ -1,3 +1,5 @@
 accessing
 currencySymbol
-	^ self currency symbol
+  currency isString
+    ifTrue: [ currency := Currency getFromCurrencyCode: currency ].
+  ^ self currency symbol
