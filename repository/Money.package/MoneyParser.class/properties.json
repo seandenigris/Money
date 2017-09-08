@@ -6,12 +6,14 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
+		"number",
+		"thousands",
+		"cents",
 		"amount",
 		"currency",
-		"separator",
-		"decimal" ],
-	"name" : "Money",
+		"dollars" ],
+	"name" : "MoneyParser",
 	"pools" : [
 		 ],
-	"super" : "Magnitude",
+	"super" : "PPCompositeParser",
 	"type" : "normal" }
