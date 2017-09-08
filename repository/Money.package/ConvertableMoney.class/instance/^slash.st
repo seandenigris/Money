@@ -1,4 +1,8 @@
 arithmetic
 / other
-	other isMoney ifTrue: [self error: 'Cannot divide two money values'].
-	^ self class amount: self amount / other currency: self currency
+	other isMoney
+		ifTrue: [ 
+			other currency = currency
+				ifTrue: [ ^ amount / other amount ]
+				ifFalse: [ ^ self / other convertTo: currency ] ].
+	^ self class amount: amount / other currency: currency
