@@ -19,7 +19,7 @@ tmp add: (self new country: 'Northern Mariana Islands'; currencyName: 'United St
 tmp add: (self new country: 'Norway'; currencyName: 'Norwegian krone'; symbol: 'kr'; currency: 'NOK').
 tmp add: (self new country: 'Oman'; currencyName: 'Omani rial'; symbol: 'ر.ع.'; currency: 'OMR').
 tmp add: (self new country: 'Pakistan'; currencyName: 'Pakistani rupee'; symbol: '₨'; currency: 'PKR').
-tmp add: (self new country: 'Palau'; currencyName: 'Palauan dollar'; symbol: '$'; currency: 'None').
+tmp add: (self new country: 'Palau'; currencyName: 'Palauan dollar[A]'; symbol: '$'; currency: 'None').
 tmp add: (self new country: 'Palestine'; currencyName: 'Israeli new sheqel'; symbol: '₪'; currency: 'ILS').
 tmp add: (self new country: 'Panama'; currencyName: 'Panamanian balboa'; symbol: 'B/.'; currency: 'PAB').
 tmp add: (self new country: 'Papua New Guinea'; currencyName: 'Papua New Guinean kina'; symbol: 'K'; currency: 'PGK').

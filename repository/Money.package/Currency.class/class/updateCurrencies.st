@@ -1,3 +1,0 @@
-accessing
-updateCurrencies
-Currency new setConvertableCurrenciesAndRates.

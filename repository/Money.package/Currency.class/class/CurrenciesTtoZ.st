@@ -18,14 +18,14 @@ tmp add: (self new country: 'Tuvalu'; currencyName: 'Australian dollar'; symbol:
 tmp add: (self new country: 'Uganda'; currencyName: 'Ugandan shilling'; symbol: 'Sh'; currency: 'UGX').
 tmp add: (self new country: 'Ukraine'; currencyName: 'Ukrainian hryvnia'; symbol: '₴'; currency: 'UAH').
 tmp add: (self new country: 'United Arab Emirates'; currencyName: 'United Arab Emirates dirham'; symbol: 'د.إ'; currency: 'AED').
-tmp add: (self new country: 'United Kingdom'; currencyName: 'British pound'; symbol: '£'; currency: 'GBP').
+tmp add: (self new country: 'United Kingdom'; currencyName: 'British pound[C]'; symbol: '£'; currency: 'GBP').
 tmp add: (self new country: 'United States'; currencyName: 'United States dollar'; symbol: '$'; currency: 'USD').
 tmp add: (self new country: 'Uruguay'; currencyName: 'Uruguayan peso'; symbol: '$'; currency: 'UYU').
 tmp add: (self new country: 'Uzbekistan'; currencyName: 'Uzbekistani som'; symbol: ''; currency: 'UZS').
 tmp add: (self new country: 'Vanuatu'; currencyName: 'Vanuatu vatu'; symbol: 'Vt'; currency: 'VUV').
 tmp add: (self new country: 'Vatican City'; currencyName: 'Euro'; symbol: '€'; currency: 'EUR').
 tmp add: (self new country: 'Venezuela'; currencyName: 'Venezuelan bolívar'; symbol: 'Bs F'; currency: 'VEF').
-tmp add: (self new country: 'Vietnam'; currencyName: 'Vietnamese đong'; symbol: '₫'; currency: 'VND').
+tmp add: (self new country: 'Vietnam'; currencyName: 'Vietnamese đồng'; symbol: '₫'; currency: 'VND').
 tmp add: (self new country: 'Wallis and Futuna'; currencyName: 'CFP franc'; symbol: 'Fr'; currency: 'XPF').
 tmp add: (self new country: 'Western Sahara'; currencyName: 'Moroccan dirham'; symbol: 'د.م.'; currency: 'MAD').
 tmp add: (self new country: 'Yemen'; currencyName: 'Yemeni rial'; symbol: '﷼'; currency: 'YER').

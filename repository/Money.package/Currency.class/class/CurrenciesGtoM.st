@@ -11,7 +11,7 @@ tmp add: (self new country: 'Gibraltar'; currencyName: 'Gibraltar pound'; symbol
 tmp add: (self new country: 'Greece'; currencyName: 'Euro'; symbol: '€'; currency: 'EUR').
 tmp add: (self new country: 'Grenada'; currencyName: 'East Caribbean dollar'; symbol: '$'; currency: 'XCD').
 tmp add: (self new country: 'Guatemala'; currencyName: 'Guatemalan quetzal'; symbol: 'Q'; currency: 'GTQ').
-tmp add: (self new country: 'Guernsey'; currencyName: 'British pound'; symbol: '£'; currency: 'GBP').
+tmp add: (self new country: 'Guernsey'; currencyName: 'British pound[C]'; symbol: '£'; currency: 'GBP').
 tmp add: (self new country: 'Guinea'; currencyName: 'Guinean franc'; symbol: 'Fr'; currency: 'GNF').
 tmp add: (self new country: 'Guinea-Bissau'; currencyName: 'West African CFA franc'; symbol: 'Fr'; currency: 'XOF').
 tmp add: (self new country: 'Guyana'; currencyName: 'Guyanese dollar'; symbol: '$'; currency: 'GYD').
@@ -25,12 +25,12 @@ tmp add: (self new country: 'Indonesia'; currencyName: 'Indonesian rupiah'; symb
 tmp add: (self new country: 'Iran'; currencyName: 'Iranian rial'; symbol: '﷼'; currency: 'IRR').
 tmp add: (self new country: 'Iraq'; currencyName: 'Iraqi dinar'; symbol: 'ع.د'; currency: 'IQD').
 tmp add: (self new country: 'Ireland'; currencyName: 'Euro'; symbol: '€'; currency: 'EUR').
-tmp add: (self new country: 'Isle of Man'; currencyName: 'British pound'; symbol: '£'; currency: 'GBP').
+tmp add: (self new country: 'Isle of Man'; currencyName: 'British pound[C]'; symbol: '£'; currency: 'GBP').
 tmp add: (self new country: 'Israel'; currencyName: 'Israeli new sheqel'; symbol: '₪'; currency: 'ILS').
 tmp add: (self new country: 'Italy'; currencyName: 'Euro'; symbol: '€'; currency: 'EUR').
 tmp add: (self new country: 'Jamaica'; currencyName: 'Jamaican dollar'; symbol: '$'; currency: 'JMD').
 tmp add: (self new country: 'Japan'; currencyName: 'Japanese yen'; symbol: '¥'; currency: 'JPY').
-tmp add: (self new country: 'Jersey'; currencyName: 'British pound'; symbol: '£'; currency: 'GBP').
+tmp add: (self new country: 'Jersey'; currencyName: 'British pound[C]'; symbol: '£'; currency: 'GBP').
 tmp add: (self new country: 'Jordan'; currencyName: 'Jordanian dinar'; symbol: 'د.ا'; currency: 'JOD').
 tmp add: (self new country: 'Kazakhstan'; currencyName: 'Kazakhstani tenge'; symbol: '〒'; currency: 'KZT').
 tmp add: (self new country: 'Kenya'; currencyName: 'Kenyan shilling'; symbol: 'Sh'; currency: 'KES').

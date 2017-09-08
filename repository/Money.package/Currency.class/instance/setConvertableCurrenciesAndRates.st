@@ -1,22 +1,25 @@
 accessing
 setConvertableCurrenciesAndRates
-	| response first second availableCurrencies convertableCurrencies tmp tmp1 rate arg |
-	convertableCurrencies := Dictionary new.
-	availableCurrencies := (Currency currencies collect: [ :each | each currency ]) asSet.
-	availableCurrencies
-		do:
-			[ :each | 
-			arg := Array with: '1USD=?' , each.
-			response := HTTPSocket
-				httpGetDocument: 'http://www.google.com/ig/calculator'
-				args:
-					{'hl' -> #('en').
-					'q' -> arg}.
-			first := response contents findString: ',rhs' startingAt: 0.
-			second := response contents findString: ' ' startingAt: first + 7.
-			rate := (response contents copyFrom: first + 7 to: second) asNumber.
+
+|response first second availableCurrencies convertableCurrencies tmp tmp1 rate|
+convertableCurrencies := Dictionary new.
+availableCurrencies := Currency Currencies collect: [:each | each currency].
+
+availableCurrencies do: [:each|	response := Curl new getContentsUrl: 'http://www.google.com/search?&q=1.00+USD+in+' , each.
 		
-			convertableCurrencies at: each put: rate ].
-	Currency convertableCurrencies: convertableCurrencies.
-	Currency currenciesUpdated: DateAndTime now.
-	self setConvertableCurrencyNames
+	first := response findString: 'h2 class=r' startingAt: 0.
+	first=0 ifFalse:[second := response findString: 'h2' startingAt: (first +1).
+
+						tmp1 := response copyFrom: first to: second.
+						first := tmp1 findString: '= ' startingAt: 0.
+						second := tmp1 findString: ' ' startingAt: (first +2).
+						rate := (tmp1 copyFrom: first+2 to: second) asNumber.
+						convertableCurrencies at: each put: rate]].
+
+
+
+
+ 
+Currency ConvertableCurrencies: convertableCurrencies.
+Currency CurrenciesUpdated: DateAndTime now.
+^convertableCurrencies .

@@ -1,3 +1,3 @@
-accessing
-convertableCurrencies
-	^ convertableCurrencies
+as yet unclassified
+ConvertableCurrencies
+	^ConvertableCurrencies

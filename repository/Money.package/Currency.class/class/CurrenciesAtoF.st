@@ -6,7 +6,7 @@ tmp add: (self new country: 'Abkhazia'; currencyName: 'Georgian lari'; symbol: '
 tmp add: (self new country: 'Afghanistan'; currencyName: 'Afghan afghani'; symbol: '؋'; currency: 'AFN').
 tmp add: (self new country: 'Akrotiri and Dhekelia'; currencyName: 'Euro'; symbol: '€'; currency: 'EUR').
 tmp add: (self new country: 'Albania'; currencyName: 'Albanian lek'; symbol: 'L'; currency: 'ALL').
-tmp add: (self new country: 'Alderney'; currencyName: 'British pound'; symbol: '£'; currency: 'GBP').
+tmp add: (self new country: 'Alderney'; currencyName: 'British pound[C]'; symbol: '£'; currency: 'GBP').
 tmp add: (self new country: 'Algeria'; currencyName: 'Algerian dinar'; symbol: 'د.ج'; currency: 'DZD').
 tmp add: (self new country: 'Andorra'; currencyName: 'Euro'; symbol: '€'; currency: 'EUR').
 tmp add: (self new country: 'Angola'; currencyName: 'Angolan kwanza'; symbol: 'Kz'; currency: 'AOA').
@@ -33,7 +33,7 @@ tmp add: (self new country: 'Bolivia'; currencyName: 'Bolivian boliviano'; symbo
 tmp add: (self new country: 'Bosnia and Herzegovina'; currencyName: 'Bosnia and Herzegovina convertible mark'; symbol: 'KM or КМ'; currency: 'BAM').
 tmp add: (self new country: 'Botswana'; currencyName: 'Botswana pula'; symbol: 'P'; currency: 'BWP').
 tmp add: (self new country: 'Brazil'; currencyName: 'Brazilian real'; symbol: 'R$'; currency: 'BRL').
-tmp add: (self new country: 'British Indian Ocean Territory'; currencyName: 'United States dollar'; symbol: '$'; currency: 'USD').
+tmp add: (self new country: 'British Indian Ocean Territory'; currencyName: 'United States dollar[4]'; symbol: '$'; currency: 'USD').
 tmp add: (self new country: 'British Virgin Islands'; currencyName: 'United States dollar'; symbol: '$'; currency: 'USD').
 tmp add: (self new country: 'Brunei'; currencyName: 'Brunei dollar'; symbol: '$'; currency: 'BND').
 tmp add: (self new country: 'Bulgaria'; currencyName: 'Bulgarian lev'; symbol: 'лв'; currency: 'BGN').

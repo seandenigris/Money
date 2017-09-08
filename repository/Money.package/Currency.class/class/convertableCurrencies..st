@@ -1,3 +1,3 @@
-accessing
-convertableCurrencies: anObject
-	convertableCurrencies := anObject
+as yet unclassified
+ConvertableCurrencies: anOrderedCollection
+	ConvertableCurrencies:=anOrderedCollection 

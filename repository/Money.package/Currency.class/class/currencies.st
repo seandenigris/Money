@@ -1,5 +1,5 @@
 as yet unclassified
-currencies
+Currencies
 	|tmp|
 	tmp := OrderedCollection  new.
 	tmp addAll: self CurrenciesAtoF.
