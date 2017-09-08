@@ -1,3 +1,3 @@
-as yet unclassified
+accessing
 separator
-	^self class separator
+	^separator ifNil: [ separator := Locale current primDigitGrouping ]

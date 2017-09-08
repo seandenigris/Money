@@ -1,3 +1,3 @@
-as yet unclassified
+accessing
 currency
-	^ currency ifNil: [ self class currency ]
+	^ currency ifNil: [ currency := Locale current primCurrencySymbol ]

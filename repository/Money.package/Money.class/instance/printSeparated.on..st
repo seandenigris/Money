@@ -1,4 +1,4 @@
-as yet unclassified
+printing
 printSeparated: aNumber on: aStream
 	| s n |
 	aNumber > 1000

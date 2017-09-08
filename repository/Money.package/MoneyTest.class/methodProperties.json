@@ -8,6 +8,8 @@
 		"testMultiCurrencyArithmetic" : "avi 6/24/2005 02:22",
 		"testMultiCurrencyPrinting" : "avi 7/14/2005 12:23",
 		"testNonMoneyArithmetic" : "avi 6/24/2005 01:11",
+		"testPrintOn" : "jmck 7/15/2009 13:45",
+		"testReadFrom" : "jmck 7/15/2009 13:43",
 		"testRounding" : "avi 7/14/2005 12:37",
 		"testSameCurrencyArithmetic" : "avi 7/14/2005 12:17",
 		"testSingleCurrencyPrinting" : "avi 7/14/2005 12:23" } }

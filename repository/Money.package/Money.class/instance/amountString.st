@@ -1,3 +1,3 @@
-as yet unclassified
+printing
 amountString
 	^ amount printShowingDecimalPlaces: 2

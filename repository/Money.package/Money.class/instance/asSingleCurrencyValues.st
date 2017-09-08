@@ -1,3 +1,3 @@
-as yet unclassified
+printing
 asSingleCurrencyValues
 	^ Array with: self

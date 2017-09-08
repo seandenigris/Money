@@ -3,12 +3,13 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		"Currency",
-		"Separator" ],
+		 ],
 	"commentStamp" : "",
 	"instvars" : [
 		"amount",
-		"currency" ],
+		"currency",
+		"separator",
+		"decimal" ],
 	"name" : "Money",
 	"pools" : [
 		 ],

@@ -1,3 +1,3 @@
-as yet unclassified
+comparing
 hash
 	^ amount hash bitXor: currency hash

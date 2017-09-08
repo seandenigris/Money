@@ -1,4 +1,4 @@
-as yet unclassified
+comparing
 = other
 	^ other species = self species
 		and: [other amount = self amount]

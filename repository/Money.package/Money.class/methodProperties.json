@@ -1,13 +1,10 @@
 {
 	"class" : {
 		"amount:currency:" : "avi 6/24/2005 15:05",
-		"currency" : "jmck 7/14/2009 11:12",
-		"defaultSeparator" : "jmck 7/13/2009 18:25",
-		"readFrom:" : "jmck 7/13/2009 22:21",
-		"separator" : "jmck 7/13/2009 22:29" },
+		"readFrom:" : "jmck 7/13/2009 22:21" },
 	"instance" : {
 		"*" : "avi 6/24/2005 01:56",
-		"+" : "avi 7/6/2005 17:02",
+		"+" : "jmck 7/15/2009 13:41",
 		"-" : "avi 7/6/2005 17:02",
 		"/" : "avi 7/14/2005 12:40",
 		"<" : "avi 6/24/2005 16:26",
@@ -17,7 +14,8 @@
 		"amount" : "avi 6/24/2005 01:00",
 		"amountString" : "avi 9/4/2005 15:20",
 		"asSingleCurrencyValues" : "avi 6/24/2005 02:16",
-		"currency" : "jmck 7/14/2009 11:18",
+		"currency" : "jmck 7/15/2009 12:24",
+		"decimal" : "jmck 7/14/2009 21:53",
 		"errorNotMoney" : "avi 6/24/2005 01:55",
 		"hash" : "avi 6/24/2005 02:04",
 		"isMoney" : "avi 6/24/2005 01:00",
@@ -25,8 +23,8 @@
 		"isSingleCurrency" : "avi 6/24/2005 02:08",
 		"nearestCent" : "avi 9/4/2005 15:13",
 		"normalizeAmount:" : "ac 10/30/2005 20:10",
-		"printOn:" : "jmck 7/13/2009 20:43",
+		"printOn:" : "jmck 7/14/2009 21:09",
 		"printSeparated:on:" : "jmck 7/14/2009 10:14",
-		"readFrom:" : "jmck 7/13/2009 22:21",
-		"separator" : "jmck 7/13/2009 22:28",
+		"readFrom:" : "jmck 7/15/2009 13:28",
+		"separator" : "jmck 7/15/2009 12:24",
 		"setAmount:currency:" : "avi 6/24/2005 15:06" } }
