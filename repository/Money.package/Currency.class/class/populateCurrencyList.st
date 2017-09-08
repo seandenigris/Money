@@ -1,7 +1,8 @@
 accessing
 populateCurrencyList
 	| currencyXml |
-	currencyXml := XMLDOMParser parse: (ZnEasy get: self currencyListXmlUrl) contents.
+	self halt.
+	currencyXml := XMLDOMParser parse: (self httpClient get: self currencyListXmlUrl) contents.
 	currencies := OrderedCollection new.
 	currencyXml firstNode nodes first nodes
 		do: [ :eachCurrencyXml | 
