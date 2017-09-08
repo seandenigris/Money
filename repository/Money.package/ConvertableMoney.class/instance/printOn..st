@@ -1,10 +1,10 @@
-printing
+comparing
 printOn: aStream
 	| n |
 	self useSymbol ifTrue:[self currency ifNotNil: 
-									[aStream nextPutAll: (Currency currencies select: [:each | each currency = self currency ] ) first symbol ]]
+									[aStream nextPutAll: currency symbol ]]
 						ifFalse: [ self currency ifNotNil: 
-									[aStream nextPutAll: self currency ].
+									[aStream nextPutAll: currency currencyCode].
 									aStream space.].
 	
 	amount >= 1000 

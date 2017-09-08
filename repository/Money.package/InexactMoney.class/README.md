@@ -1,1 +1,1 @@
-An InexactMoney is just like ConvertableMoney but uses Floats instead of Fractions, trading accuracy for speed.
+InexactMoney is exactly like ConvertableMoney but is uses floats for math rather than fractions.

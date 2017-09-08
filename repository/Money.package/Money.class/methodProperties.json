@@ -1,7 +1,8 @@
 {
 	"class" : {
-		"amount:currency:" : "avi 6/24/2005 15:05",
-		"readFrom:" : "jmck 7/13/2009 22:21" },
+		"amount:currency:" : "PaulDeBruicker 5/3/2010 15:50",
+		"readFrom:" : "jmck 7/13/2009 22:21",
+		"zeroMoney" : "PaulDeBruicker 5/3/2010 14:08" },
 	"instance" : {
 		"*" : "PaulDeBruicker 4/28/2010 10:07",
 		"+" : "PaulDeBruicker 4/28/2010 10:07",

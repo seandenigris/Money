@@ -1,14 +1,14 @@
-as yet unclassified
-convertTo: aCurrencyCode
+comparing
+convertTo: aCurrency
 
 |from to rate|
 
-	from := Currency convertableCurrencies select:[:each | each currency = self currency]. 
-	to := Currency convertableCurrencies select:[:each | each currency = aCurrencyCode]. 
+	from := currency conversionRateToUSD . 
+	to := aCurrency conversionRateToUSD .
 
-	from isEmptyOrNil ifTrue: [^self].
-	to isEmptyOrNil ifTrue: [^self].	
+	from isNil ifTrue: [^self].
+	to isNil ifTrue: [^self].	
 		
-	rate := to conversionRateToUSD / from conversionRateToUSD .
+	rate := to/ from .
 
-	^ConvertableMoney amount: (rate * self amount) currencyCode: aCurrencyCode .
+	^self class amount: (rate * self amount) currency: aCurrency.

@@ -1,7 +1,7 @@
-comparing
+arithmetic
 < other
 |converted|
-	self currency = other currency
-		ifTrue: [ ^ self amount < other amount or: [ self amount = other amount and: [ self currency < other currency ] ] ]
-		ifFalse: [ converted:= other convertTo: self currency.
-					self < converted. ]
+	currency = other currency
+		ifTrue: [ ^( amount < other amount )]
+		ifFalse: [ converted:= other convertTo: currency.
+					^(self < converted). ]
