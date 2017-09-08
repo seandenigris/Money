@@ -1,7 +1,11 @@
 accessing
 populateCurrencyList
 	| currencyXml |
-	currencyXml := XMLDOMParser parse: (self httpClient get: self currencyListXmlUrl) contents.
+	[ currencyXml := XMLDOMParser parse: (self httpClient get: self currencyListXmlUrl) contents ]
+		on: NameLookupFailure
+		do: [ 
+			Transcript show: 'no network connection'.
+			^ self ].
 	currencies := OrderedCollection new.
 	currencyXml firstNode nodes first nodes
 		do: [ :eachCurrencyXml | 
