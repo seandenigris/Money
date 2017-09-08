@@ -1,3 +1,3 @@
 accessing
 currencyName
-	^ currencyName
+	^ currencyName ifNil:[self country]
