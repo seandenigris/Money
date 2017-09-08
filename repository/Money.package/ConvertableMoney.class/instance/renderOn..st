@@ -9,7 +9,5 @@ renderOn: html
 					html span
 						class: 'amt';
 						id: html nextId;
-						script:
-								((html jQuery id: html lastId)
-										text: (JSStream on: 'Number.parseFloat($("#' , html lastId , '").text()).toLocaleString()'));
+						script: (self renderCurrencyLocaleFormattingScriptOn: html);
 						with: (self amount printShowingDecimalPlaces: 2) ]
