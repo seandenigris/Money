@@ -10,5 +10,6 @@ renderOn: html
 						class: 'amt';
 						id: html nextId;
 						script:
-								((html jQuery id: html lastId) text: (JSStream on: 'Number.toLocaleString($("#' , html lastId , '").text()).values'));
+								((html jQuery id: html lastId)
+										text: (JSStream on: 'Number.parseFloat($("#' , html lastId , '").text()).toLocaleString()'));
 						with: (self amount printShowingDecimalPlaces: 2) ]
