@@ -1,3 +1,3 @@
 as yet unclassified
 currency
-	^ currency
+	^ currency ifNil: [ self class currency ]

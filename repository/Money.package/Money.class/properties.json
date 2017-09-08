@@ -3,7 +3,8 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		 ],
+		"Currency",
+		"Separator" ],
 	"commentStamp" : "",
 	"instvars" : [
 		"amount",
