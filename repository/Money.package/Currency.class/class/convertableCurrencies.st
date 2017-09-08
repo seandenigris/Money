@@ -1,3 +1,4 @@
 accessing
 convertableCurrencies
-	^ convertableCurrencies
+	 convertableCurrencies isNil ifTrue:[self setConvertableCurrenciesAndRates  ].
+	^convertableCurrencies 
