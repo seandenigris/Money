@@ -3,7 +3,8 @@
 	"classinstvars" : [
 		"convertableCurrencies",
 		"currenciesUpdated",
-		"currencies" ],
+		"currencies",
+		"currencyCodesAndSymbols" ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "PaulDeBruicker 11/1/2012 18:10",
@@ -12,7 +13,9 @@
 		"symbol",
 		"country",
 		"currencyName",
-		"conversionRateToUSD" ],
+		"conversionRateToUSD",
+		"numericCode",
+		"minorUnit" ],
 	"name" : "Currency",
 	"pools" : [
 		 ],
