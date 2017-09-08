@@ -4,4 +4,4 @@ arithmetic
 	other isMoney ifFalse: [self errorNotMoney].
 	other currency = self currency ifTrue:
 		[^ Money amount: self amount - other amount currency: self currency].
-	^ self + (other * - 1)
+	^ self + (other * -1)

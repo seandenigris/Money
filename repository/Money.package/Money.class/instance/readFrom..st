@@ -1,8 +1,6 @@
 reading
 readFrom: aStream
-	self class readFrom: aStream 	
-		
-	"| number thousands curr currencies |
+	| number thousands curr currencies |
 	currencies := Locale knownLocales values collect: [ :loc | loc primCurrencySymbol ].
 	curr := WriteStream on: String new..
 	number := 0.
@@ -20,4 +18,4 @@ readFrom: aStream
 	thousands allButLastDo: [ :each | 
 		number := (number + each asInteger) * 1000 ].
 	number := number asFloat + (thousands last asNumber).
-	amount := number"
+	amount := number
