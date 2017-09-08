@@ -1,6 +1,8 @@
 accessing
 dollars
-	^ ($$ asParser , amount) ==> [ :nodes | 
+	^ (currency , amount) ==> [ :nodes |
 		Money 
 			amount: (nodes second asScaledDecimal: 2) 
-			currency: nodes first asString ]
+			currency: (nodes first isNil
+				ifTrue: [ Locale current primCurrencySymbol asString ]
+				ifFalse: [ nodes first asString ]) ]

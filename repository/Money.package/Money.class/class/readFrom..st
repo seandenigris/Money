@@ -1,3 +1,4 @@
 as yet unclassified
 readFrom: aStream
-	^ self new readFrom: aStream
+	^MoneyParser instance parse: aStream 
+		onError: [ Error signal: 'Invalid Money input']

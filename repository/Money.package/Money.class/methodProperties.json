@@ -1,7 +1,7 @@
 {
 	"class" : {
 		"amount:currency:" : "avi 6/24/2005 15:05",
-		"readFrom:" : "jmck 7/13/2009 22:21" },
+		"readFrom:" : "JohnMcKeon 3/29/2010 18:13" },
 	"instance" : {
 		"*" : "avi 6/24/2005 01:56",
 		"+" : "jmck 7/15/2009 13:41",
@@ -27,6 +27,6 @@
 		"normalizeAmount:" : "ac 10/30/2005 20:10",
 		"printOn:" : "jmck 7/14/2009 21:09",
 		"printSeparated:on:" : "jmck 7/14/2009 10:14",
-		"readFrom:" : "JohnMcKeon 3/6/2010 13:19",
+		"readFrom:" : "JohnMcKeon 3/29/2010 18:12",
 		"separator" : "jmck 7/15/2009 12:24",
 		"setAmount:currency:" : "avi 6/24/2005 15:06" } }

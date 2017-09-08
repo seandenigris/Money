@@ -1,7 +1,7 @@
 reading
 readFrom: aStream
-	^MoneyParser new parse: aStream onError: [ Error signal: 'invalid Money input']
-	
+	self class readFrom: aStream 	
+		
 	"| number thousands curr currencies |
 	currencies := Locale knownLocales values collect: [ :loc | loc primCurrencySymbol ].
 	curr := WriteStream on: String new..
