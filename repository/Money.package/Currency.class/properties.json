@@ -9,7 +9,7 @@
 		"ConvertableCurrencies",
 		"ConvertableCurrencyNames",
 		"CurrenciesUpdated" ],
-	"commentStamp" : "PaulDeBruicker 10/23/2009 14:37",
+	"commentStamp" : "PaulDeBruicker 7/8/2010 16:52",
 	"instvars" : [
 		"currency",
 		"symbol",

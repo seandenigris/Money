@@ -13,8 +13,9 @@ setConvertableCurrenciesAndRates
 					'q' -> arg}.
 			first := response contents findString: ',rhs' startingAt: 0.
 			second := response contents findString: ' ' startingAt: first + 7.
-			rate := (response contents copyFrom: first + 7 to: second) asNumber.
+			rate := (response contents copyFrom: first + 7 to: second).
+			rate = '",error: ' ifTrue:[] ifFalse:[rate:=rate copy asNumber.
 		
-			each conversionRateToUSD: rate ].
+			each conversionRateToUSD: rate ]].
 	Currency convertableCurrencies: (currencies select:[:each | each isConvertable]).
 	Currency currenciesUpdated: DateAndTime now.
