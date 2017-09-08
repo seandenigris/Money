@@ -8,5 +8,7 @@ renderOn: html
 						with: self currencySymbol.
 					html span
 						class: 'amt';
-						script:(html jQuery this text: (JSStream on:'Number.toLocaleString($(this).text()).values'));
+						id: html nextId;
+						script:
+								((html jQuery id: html lastId) text: (JSStream on: 'Number.toLocaleString($("#' , html lastId , '").text()).values'));
 						with: (self amount printShowingDecimalPlaces: 2) ]
