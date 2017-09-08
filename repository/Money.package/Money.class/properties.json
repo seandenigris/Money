@@ -8,8 +8,12 @@
 	"instvars" : [
 		"amount",
 		"currency",
+		"symbol",
+		"country",
+		"currencyName",
 		"separator",
-		"decimal" ],
+		"decimal",
+		"currencyRefreshPeriod" ],
 	"name" : "Money",
 	"pools" : [
 		 ],

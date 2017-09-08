@@ -1,0 +1,3 @@
+accessing
+currenciesUpdated
+	^ currenciesUpdated
