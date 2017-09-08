@@ -1,3 +1,3 @@
 accessing
 currency
-	^ currency
+	^ currency ifNil:[currency:=String new]
