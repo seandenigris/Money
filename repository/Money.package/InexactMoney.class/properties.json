@@ -1,0 +1,14 @@
+{
+	"category" : "Money",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "PaulDeBruicker 4/28/2010 10:30",
+	"instvars" : [
+		 ],
+	"name" : "InexactMoney",
+	"pools" : [
+		 ],
+	"super" : "ConvertableMoney",
+	"type" : "normal" }

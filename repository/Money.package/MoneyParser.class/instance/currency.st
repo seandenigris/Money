@@ -1,3 +1,0 @@
-accessing
-currency
-	^ $$ asParser optional

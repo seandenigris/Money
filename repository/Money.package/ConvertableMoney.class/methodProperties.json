@@ -1,0 +1,16 @@
+{
+	"class" : {
+		"amount:currencyCode:" : "PaulDeBruicker 4/28/2010 09:29",
+		"amount:currencySymbol:" : "PaulDeBruicker 4/28/2010 09:29" },
+	"instance" : {
+		"+" : "PaulDeBruicker 4/28/2010 10:08",
+		"<" : "PaulDeBruicker 4/28/2010 10:20",
+		"=" : "PaulDeBruicker 4/28/2010 10:22",
+		"convertTo:" : "PaulDeBruicker 4/28/2010 10:03",
+		"currencyName" : "PaulDeBruicker 4/28/2010 09:29",
+		"currencyName:" : "PaulDeBruicker 4/28/2010 09:29",
+		"printOn:" : "PaulDeBruicker 4/28/2010 09:29",
+		"printSeparated:on:" : "PaulDeBruicker 4/28/2010 09:29",
+		"symbol" : "PaulDeBruicker 4/28/2010 09:29",
+		"symbol:" : "PaulDeBruicker 4/28/2010 09:29",
+		"useSymbol" : "PaulDeBruicker 4/28/2010 09:29" } }

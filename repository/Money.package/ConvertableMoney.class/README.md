@@ -1,0 +1,1 @@
+ConvertableMoney behaves much like Money but knows about the Currency class and can use the information stored there to convert between currencies. 

@@ -1,5 +1,3 @@
-instance creation
+as yet unclassified
 readFrom: aStream
-	"^MoneyParser instance parse: aStream 
-		onError: [ Error signal: 'Invalid Money input']"
-	^self new readFrom: aStream
+	^ self new readFrom: aStream

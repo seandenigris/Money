@@ -1,0 +1,15 @@
+{
+	"category" : "Money",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "PaulDeBruicker 4/28/2010 10:32",
+	"instvars" : [
+		"symbol",
+		"currencyName" ],
+	"name" : "ConvertableMoney",
+	"pools" : [
+		 ],
+	"super" : "Money",
+	"type" : "normal" }
