@@ -7,8 +7,11 @@ populateCurrencyList
 			Transcript show: 'no network connection'.
 			^ self ].
 	currencies := OrderedCollection new.
-	currencyXml firstNode nodes first nodes
-		do: [ :eachCurrencyXml | 
+	
+		(currencyXml  findElementNamed: 'CcyTbl') nodes 
+			select:[:ea | ea isStringNode not] 
+			thenDo:
+		 [ :eachCurrencyXml | 
 			| newCurrency nodes |
 			nodes := eachCurrencyXml nodes.
 			newCurrency := self new.
@@ -38,4 +41,4 @@ populateCurrencyList
 				inInstVar: #numericCode:
 				of: newCurrency.
 			newCurrency setSymbol.
-			currencies add: newCurrency ]
+			currencies add: newCurrency ] 
