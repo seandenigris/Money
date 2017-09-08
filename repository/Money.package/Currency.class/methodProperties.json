@@ -1,5 +1,7 @@
 {
 	"class" : {
+		"appId" : "PaulDeBruicker 11/1/2012 17:56",
+		"baseUrl" : "PaulDeBruicker 11/1/2012 18:00",
 		"convertableCurrencies" : "PaulDeBruicker 10/29/2009 11:40",
 		"convertableCurrencies:" : "PaulDeBruicker 10/29/2009 11:40",
 		"convertableCurrencySymbols" : "PaulDeBruicker 4/12/2012 08:38",
@@ -11,14 +13,19 @@
 		"currenciesTtoZ" : "PaulDeBruicker 4/12/2012 08:57",
 		"currenciesUpdated" : "PaulDeBruicker 10/29/2009 11:40",
 		"currenciesUpdated:" : "PaulDeBruicker 10/29/2009 11:40",
+		"currenciesUrl" : "PaulDeBruicker 11/1/2012 17:57",
+		"currencyListPath" : "PaulDeBruicker 11/1/2012 17:55",
 		"getFromCountryName:" : "PaulDeBruicker 4/12/2012 07:59",
 		"getFromCurrencyCode:" : "PaulDeBruicker 4/12/2012 07:58",
 		"getFromName:" : "PaulDeBruicker 4/12/2012 07:58",
 		"getFromSymbol:" : "PaulDeBruicker 4/12/2012 08:45",
 		"initialize" : "PaulDeBruicker 4/12/2012 07:59",
 		"initializeCurrencies" : "PaulDeBruicker 4/12/2012 08:58",
+		"latestPath" : "PaulDeBruicker 11/1/2012 17:55",
+		"latestUrl" : "PaulDeBruicker 11/1/2012 17:57",
 		"localCurrency" : "PaulDeBruicker 4/12/2012 08:41",
-		"setConvertableCurrenciesAndRates" : "PaulDeBruicker 5/2/2012 16:57",
+		"openExchangeRateAppId" : "PaulDeBruicker 11/1/2012 17:53",
+		"setConvertableCurrenciesAndRates" : "PaulDeBruicker 11/1/2012 18:28",
 		"updateCurrencies" : "PaulDeBruicker 4/12/2012 10:03",
 		"widelyUsedCurrencies" : "PaulDeBruicker 4/12/2012 10:07" },
 	"instance" : {

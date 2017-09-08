@@ -1,0 +1,3 @@
+updating
+currencyListPath
+	^ 'currencies.json'

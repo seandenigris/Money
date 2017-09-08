@@ -1,0 +1,3 @@
+updating
+latestPath
+	^ 'latest.json'
