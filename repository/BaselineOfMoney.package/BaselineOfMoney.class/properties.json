@@ -1,0 +1,14 @@
+{
+	"category" : "BaselineOfMoney",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BaselineOfMoney",
+	"pools" : [
+		 ],
+	"super" : "BaselineOf",
+	"type" : "normal" }
