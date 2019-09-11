@@ -1,3 +1,0 @@
-class initialization
-initializeCurrencies
-	self populateCurrencyList

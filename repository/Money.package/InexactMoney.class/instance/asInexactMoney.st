@@ -1,3 +1,0 @@
-arithmetic
-asInexactMoney
-	^ self

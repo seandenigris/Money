@@ -1,3 +1,0 @@
-accessing
-currencyCode
-	^ self currency

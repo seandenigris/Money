@@ -1,3 +1,0 @@
-updating
-latestPath
-	^ 'latest.json'

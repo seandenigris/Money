@@ -1,3 +1,0 @@
-*money
-isMoney
-	^ false
