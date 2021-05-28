@@ -1,7 +1,7 @@
 Class {
 	#name : #MoneyTest,
 	#superclass : #TestCase,
-	#category : 'Money'
+	#category : #Money
 }
 
 { #category : #'as yet unclassified' }
@@ -43,19 +43,22 @@ MoneyTest >> testNonMoneyArithmetic [
 	self should: [10 + (12 asMoney: #CAD)] raise: Error
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #tests }
 MoneyTest >> testPrintOn [
 	| money |
-	money := 12000123.45 asMoney: Locale current primCurrencySymbol.
-	self assert: (money printString = (money currency , ' 12,000,123.45') )
+	money := 12000123.45 asMoney: Money localCurrencySymbol.
+	self assert: money printString = (money currency , ' 12,000,123.45').
+	
+	money := -140 asMoney: Money localCurrencySymbol.
+	self assert: money printString = (money currency , ' -140.00')
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #tests }
 MoneyTest >> testReadFrom [
 	| money strm |
 	strm := ReadStream on: '12,000,123.45'.
 	money := Money new readFrom: strm.
-	self assert:  money currency = Locale current primCurrencySymbol.
+	self assert:  money currency = Money localCurrencySymbol.
 	self assert:  money amount = 12000123.45 .
 	
 	strm := ReadStream on: '$12,000,123.45'.

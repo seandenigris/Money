@@ -1,3 +1,9 @@
+"
+!Decoding from String
+The default, ${method:Money class>>#readFrom:}$ uses a float to represent the amount. This is often not what you want because floats are imprecise. This is at odds with Money's design, in which the choise of precision was intentionally left up to the user. From ""Smalltalk Best Practice Patterns"" by Ken Beck, p. 192:
+
+	==The variable with the Role Suggesting Instance Variable Name “amount” will hold any old Number. This lets us defers issues of numerical accuracy and stability to the Number classes. If you want a super accurate but slow Money, you can make the Amount a FixedPoint. If you want less accuracy but more speed, you can use a Double. As long as the amount responds to number-like messages, Money won’t care.==
+"
 Class {
 	#name : #Money,
 	#superclass : #Magnitude,
@@ -5,7 +11,7 @@ Class {
 		'amount',
 		'currency'
 	],
-	#category : 'Money'
+	#category : #Money
 }
 
 { #category : #'as yet unclassified' }
@@ -16,6 +22,21 @@ Money class >> amount: aNumber currency: aString [
 { #category : #'as yet unclassified' }
 Money class >> amount: aNumber currencyCode: aString [
 	^ self amount: aNumber currency: aString
+]
+
+{ #category : #accessing }
+Money class >> localCurrencySymbol [
+	"Workaround for Pharo 8 bug (at least on Mac Big Sur) where the prim always returns an empty string"
+	^ Locale current primCurrencySymbol ifEmpty: [ '$' ]
+]
+
+{ #category : #accessing }
+Money class >> localDigitGrouping [
+	| prim |
+	prim := Locale current primDigitGrouping.
+	^ prim = Character null asString
+		ifTrue: [ ',' ]
+		ifFalse: [ prim ]
 ]
 
 { #category : #'as yet unclassified' }
@@ -119,7 +140,7 @@ Money >> asSingleCurrencyValues [
 
 { #category : #accessing }
 Money >> currency [
-	^ currency ifNil: [ currency := Locale current primCurrencySymbol ]
+	^ currency ifNil: [ currency := self class localCurrencySymbol ]
 ]
 
 { #category : #accessing }
@@ -197,17 +218,17 @@ Money >> printSeparated: aNumber on: aStream [
 Money >> readFrom: aStream [
 	| number thousands curr currencies |
 	currencies := Locale knownLocales values collect: [ :loc | loc primCurrencySymbol ].
+	currencies := currencies asOrderedCollection add: '$'; yourself. "Workaround for VM bug. See #localCurrencySymbol comment"
 	curr := WriteStream on: String new.
 	number := 0.
 
 	['-+0123456789. ' includes: aStream peek] whileFalse: [ curr nextPut: aStream next ].
 	
-	curr contents = '' 
-		ifTrue: [ currency := Locale current primCurrencySymbol ]
+	curr contents = '' "No currency symbol in input"
+		ifTrue: [ currency := self class localCurrencySymbol ]
 		ifFalse: [ (currencies anySatisfy: [ :each | curr contents match: each])
 			ifFalse: [ Error signal: 'Invalid Money argument']
 			ifTrue: [ currency := curr contents ] ].
-	
 	aStream peek = $ ifTrue: [ aStream next ].
 	thousands := (aStream contents allButFirst: (aStream position)) substrings: (Array with: self separator first).
 	thousands allButLastDo: [ :each | 
@@ -218,7 +239,7 @@ Money >> readFrom: aStream [
 
 { #category : #accessing }
 Money >> separator [
-	^Locale current primDigitGrouping
+	^ self class localDigitGrouping
 ]
 
 { #category : #'initialize-release' }

@@ -31,7 +31,7 @@ Class {
 		'currencies',
 		'currencyCodesAndSymbols'
 	],
-	#category : 'Money'
+	#category : #Money
 }
 
 { #category : #updating }
@@ -326,7 +326,7 @@ Currency class >> latestUrl [
 
 { #category : #updating }
 Currency class >> localCurrency [
-	self convertableCurrencies detect: [ :each | each symbol = Locale current primCurrencySymbol ]
+	self convertableCurrencies detect: [ :each | each symbol = Money localCurrencySymbol ]
 ]
 
 { #category : #'class initialization' }
