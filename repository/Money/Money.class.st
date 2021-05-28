@@ -101,11 +101,6 @@ Money >> \\ other [
 	^ self class amount: self amount \\ other currency: self currency
 ]
 
-{ #category : #arithmetic }
-Money >> acceptMagritte: aVisitor [
-	aVisitor visitMoneyDescription: self
-]
-
 { #category : #visiting }
 Money >> acceptRoeVisitor: aVisitor [
 	aVisitor visitMoney: self

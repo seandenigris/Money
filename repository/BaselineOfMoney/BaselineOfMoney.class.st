@@ -25,7 +25,10 @@ BaselineOfMoney >> baseline: spec [
 								loads: 'Core';
 								versionString: #stable;
 								repository: 'http://smalltalkhub.com/mc/pdebruic/HTTPAPIClient/main' ];
-				package: 'Money' with: [ spec requires: #('JSON' 'HTTP-API-Client') ].
+				baseline: 'Magritte' with: [ spec repository: 'github://magritte-metamodel/Magritte' ].
+			spec
+				package: 'Money' with: [ spec requires: #('JSON' 'HTTP-API-Client') ];
+				package: 'Money-Magritte' with: [ spec requires: #('Magritte' 'Money') ].
 			spec group: 'Core' with: #('Money') ].
 	spec
 		for: #squeakCommon
