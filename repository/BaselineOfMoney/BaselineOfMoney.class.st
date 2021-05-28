@@ -1,10 +1,10 @@
 Class {
 	#name : #BaselineOfMoney,
 	#superclass : #BaselineOf,
-	#category : 'BaselineOfMoney'
+	#category : #BaselineOfMoney
 }
 
-{ #category : #'as yet unclassified' }
+{ #category : #baselines }
 BaselineOfMoney >> baseline: spec [
 	<baseline>
 	spec
@@ -30,14 +30,10 @@ BaselineOfMoney >> baseline: spec [
 	spec
 		for: #squeakCommon
 		do: [ 
-			spec
-				project: 'XMLParser'
-					with: [ 
-							spec
-								className: 'ConfigurationOfXMLParser';
-								file: 'ConfigurationOfXMLParser';
-								loads: #('Core');
-								repository: 'http://www.smalltalkhub.com/mc/PharoExtras/XMLParser/main' ];
+			spec baseline: 'XMLParser' with: [
+				spec 
+					repository: 'github://pharo-contributions/XML-XMLParser';
+					loads: #('Core') ];
 				package: 'Money' with: [ spec requires: #('XMLParser') ] ].
 	spec
 		for: #gemstone
