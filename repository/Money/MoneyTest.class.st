@@ -4,12 +4,12 @@ Class {
 	#category : #Money
 }
 
-{ #category : #'as yet unclassified' }
+{ #category : #tests }
 MoneyTest >> testCentArithmetic [
 	self assert: (0.3 asMoney: #CAD) * 3 - (0.9 asMoney: #CAD) = (0 asMoney: #CAD)
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #tests }
 MoneyTest >> testDivision [
 	self assert: (3 asMoney: #CAD) / 3 = (1 asMoney: #CAD).
 	self should: [3 / (3 asMoney: #CAD)] raise: Error.
@@ -17,14 +17,14 @@ MoneyTest >> testDivision [
 	self assert: ((3 asMoney: #CAD) + (6 asMoney: #USD)) / 3 = ((1 asMoney: #CAD) + (2 asMoney: #USD))
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #tests }
 MoneyTest >> testEquality [
 	self assert: (12 asMoney: #CAD) = (12 asMoney: #CAD).
 	self deny: (12 asMoney: #CAD) = (10 asMoney: #CAD).
 	self deny: (12 asMoney: #CAD) = (12 asMoney: #USD)
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #tests }
 MoneyTest >> testMultiCurrencyArithmetic [
 	self assert: (12 asMoney: #CAD) + (2 asMoney: #USD) = ((6 asMoney: #CAD) + (1 asMoney: #USD) + (6 asMoney: #CAD) + (1 asMoney: #USD)).
 	self assert: (20 asMoney: #CAD) + (5 asMoney: #USD) - (5 asMoney: #CAD) = ((15 asMoney: #CAD) + (5 asMoney: #USD)).
@@ -32,12 +32,12 @@ MoneyTest >> testMultiCurrencyArithmetic [
 	self deny: (5 asMoney: #CAD) + (5 asMoney: #USD) = ((5 asMoney: #CAD) + (5 asMoney: #CAD))
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #tests }
 MoneyTest >> testMultiCurrencyPrinting [
-	self assert: ((12 asMoney: #CAD) + (12.5 asMoney: #USD)) asString equals: 'CAD 12.00, USD 12.50'
+	self assert: ((12 asMoney: #CAD) + (12.5 asMoney: #USD)) asString equals: 'USD 12.50, CAD 12.00'
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #tests }
 MoneyTest >> testNonMoneyArithmetic [
 	self should: [(12 asMoney: #CAD) + 10] raise: Error.
 	self should: [10 + (12 asMoney: #CAD)] raise: Error
@@ -73,12 +73,12 @@ MoneyTest >> testReadFrom [
 	
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #tests }
 MoneyTest >> testRounding [
 	self assert: ((1/3 asMoney: #CAD) * 3) nearestCent = 1.00
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #tests }
 MoneyTest >> testSameCurrencyArithmetic [
 	self assert: (12 asMoney: #CAD) + (10 asMoney: #CAD) = (22 asMoney: #CAD).
 	self assert: (20 asMoney: #CAD) - (5 asMoney: #CAD) = (15 asMoney: #CAD).
@@ -86,7 +86,7 @@ MoneyTest >> testSameCurrencyArithmetic [
 	self assert: 5 * (2 asMoney: #CAD) = (10 asMoney: #CAD).
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #tests }
 MoneyTest >> testSingleCurrencyPrinting [
 	self assert: (12 asMoney: #CAD) asString = 'CAD 12.00'.
 	self assert: (12.2 asMoney: #CAD) asString = 'CAD 12.20'.
