@@ -200,18 +200,28 @@ Money >> printOn: aStream [
 
 { #category : #printing }
 Money >> printSeparated: aNumber on: aStream [
-	| s n n1 sz |
+	| s integerPart decimalPart initialGroup |
 	s := aNumber printShowingDecimalPlaces: 2.
-	n := s copyUpTo: self decimal.
 	
-	[ n size > 0 ] whileTrue: [
-		n1 := n copy.
-		[ (sz := n1 size) > 3 ] 
-			whileTrue: [ n1 := n1 allButLast: 3. ].
-		aStream nextPutAll: n1.
-		n size > 3 ifTrue: [ aStream nextPutAll: self separator ].
-		n := n allButFirst: sz ].
-	aStream nextPutAll: (s allButFirst: (s copyUpTo: $.) size)
+	"Handle optional sign"
+	s first isDigit ifFalse: [ 
+		aStream nextPut: s first.
+		s := s allButFirst ].
+
+	integerPart := s allButLast: 3.
+	decimalPart := s last: 3.
+	initialGroup := s first: integerPart size \\ 3.
+	
+	initialGroup ifNotEmpty: [ aStream nextPutAll: initialGroup ].
+	
+	integerPart size // 3 timesCollect: [ :i |
+		| groupStart group | 
+		groupStart := initialGroup size + 1 + (3 * (i - 1)).
+		group := s copyFrom: groupStart to: groupStart + 2.
+		groupStart = 1 ifFalse: [ aStream nextPutAll: self separator ].
+		aStream nextPutAll: group ].
+			
+	aStream nextPutAll: decimalPart
 ]
 
 { #category : #reading }
