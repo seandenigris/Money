@@ -18,16 +18,16 @@ BaselineOfMoney >> baseline: spec [
 								file: 'ConfigurationOfJSON';
 								loads: #('default');
 								repository: 'http://smalltalkhub.com/mc/PharoExtras/JSON/main' ];
-				"project: 'HTTP-API-Client'
+				project: 'HTTP-API-Client'
 					with: [ 
 							spec
 								className: 'ConfigurationOfHTTPAPIClient';
 								loads: 'Core';
 								versionString: #stable;
-								repository: 'http://smalltalkhub.com/mc/pdebruic/HTTPAPIClient/main' ];"
+								repository: 'http://smalltalkhub.com/mc/pdebruic/HTTPAPIClient/main' ];
 				baseline: 'Magritte' with: [ spec repository: 'github://magritte-metamodel/Magritte' ].
 			spec
-				package: 'Money' with: [ spec requires: #('JSON' "'HTTP-API-Client'") ];
+				package: 'Money' with: [ spec requires: #('JSON' 'HTTP-API-Client') ];
 				package: 'Money-Magritte' with: [ spec requires: #('Magritte' 'Money') ].
 			spec group: 'Core' with: #('Money') ].
 	
